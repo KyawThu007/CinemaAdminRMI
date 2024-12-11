@@ -12,10 +12,10 @@ import java.rmi.*;
  *
  * @author DELL
  */
-public interface AdminAnalysisInterface extends Remote{
+public interface AdminAnalysisInterface extends Remote {
 
     public DefaultCategoryDataset getCinemaAnalysis(int year, String[] monthList) throws RemoteException;
-    
+
     public DefaultPieDataset getCinemaAnalysisPieChart(int year, String[] monthList) throws RemoteException;
 
     public DefaultCategoryDataset getOnlyCinemaAnalysis(int cinema_id, String[] genreList, int year, String[] monthList) throws RemoteException;
