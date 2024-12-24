@@ -12,14 +12,15 @@ import java.io.Serializable;
  */
 public class Movie implements Serializable{
     int id;
-    String image,title,genre,director,cast,duration,language,release_date,trailer_url,display,detail;
+    String image,cover_image,title,genre,director,cast,duration,language,release_date,trailer_url,display,detail;
     
     public Movie() {
     }
 
-    public Movie(int id, String image, String title, String genre, String director, String cast, String duration, String language, String release_date, String trailer_url, String display, String detail) {
+    public Movie(int id, String image, String cover_image, String title, String genre, String director, String cast, String duration, String language, String release_date, String trailer_url, String display, String detail) {
         this.id = id;
         this.image = image;
+        this.cover_image = cover_image;
         this.title = title;
         this.genre = genre;
         this.director = director;
@@ -46,6 +47,14 @@ public class Movie implements Serializable{
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getCover_image() {
+        return cover_image;
+    }
+
+    public void setCover_image(String cover_image) {
+        this.cover_image = cover_image;
     }
 
     public String getTitle() {
@@ -128,4 +137,5 @@ public class Movie implements Serializable{
         this.detail = detail;
     }
 
+  
 }
